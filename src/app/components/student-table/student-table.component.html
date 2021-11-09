@@ -1,0 +1,15 @@
+<kendo-grid [data]="gridData">
+  <kendo-grid-column field="studentID" title="ID"> </kendo-grid-column>
+  <kendo-grid-column field="name" title="Name"> </kendo-grid-column>
+  <kendo-grid-column field="gender" title="Gender"> </kendo-grid-column>
+  <kendo-grid-column field="address" title="Address"> </kendo-grid-column>
+  <kendo-grid-column field="mobileNo" title="Mobile No"> </kendo-grid-column>
+  <kendo-grid-column field="dateOfBirth" title="Date of Birth"> </kendo-grid-column>
+  <kendo-grid-column field="age" title="Age"> </kendo-grid-column>
+  <kendo-grid-column field="command" title="Command">
+    <ng-template kendoGridCellTemplate>
+      <button kendoButton [primary]="true" class="action-btn">Edit</button>
+      <button kendoButton class="action-btn">Remove</button>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid>
